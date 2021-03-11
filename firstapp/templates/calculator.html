@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng</title>
+</head>
+<body>
+    <form action="/firstapp/doCalTotal/" method="post">
+        {% csrf_token %}
+        <label for="number_a"><span>Số a: </span></label>
+        <input type="number" name="number_a" id="number_a">
+        <label for="number_b"><span>Số b: </span></label>
+        <input type="number" name="number_b" id="number_b">
+        <button type="submit">Tính tổng</button>
+    </form>
+
+</body>
+</html>
